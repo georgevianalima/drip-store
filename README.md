@@ -114,50 +114,50 @@ loja-drip/
 
 ### Instalação
 
-1. **Clone o repositório** (se aplicável)
-   \\\ash
+1. **Clone o repositório**
+   ```bash
    git clone <url-do-repositorio>
    cd loja-drip
-   \\\
+   ```
 
 2. **Instale as dependências**
-   \\\ash
+   ```bash
    npm install
-   \\\
+   ```
 
 3. **Configure as variáveis de ambiente** (se necessário)
-   - Crie um arquivo \.env.local\ na raiz do projeto
-   - Configure a URL da API (exemplo): \VITE_API_URL=http://localhost:3000\
+   - Crie um arquivo `.env.local` na raiz do projeto
+   - Configure a URL da API (exemplo): `VITE_API_URL=http://localhost:3000`
 
 ### Executar em Desenvolvimento
 
-\\\ash
+```bash
 npm run dev
-\\\
+```
 
-A aplicação abrirá em \http://localhost:5173\ com **Hot Module Replacement (HMR)** ativado. Qualquer mudança será refletida automaticamente no navegador.
+A aplicação abrirá em `http://localhost:5173` com **Hot Module Replacement (HMR)** ativado. Qualquer mudança será refletida automaticamente no navegador.
 
 ### Build para Produção
 
-\\\ash
+```bash
 npm run build
-\\\
+```
 
-Gera os arquivos otimizados na pasta \dist/\.
+Gera os arquivos otimizados na pasta `dist/`.
 
 ### Preview do Build
 
-\\\ash
+```bash
 npm run preview
-\\\
+```
 
 Visualiza a versão de produção localmente.
 
 ### Verificar Qualidade do Código
 
-\\\ash
+```bash
 npm run lint
-\\\
+```
 
 Executa o ESLint para verificar a qualidade do código.
 
@@ -167,14 +167,10 @@ Executa o ESLint para verificar a qualidade do código.
 
 | Script | Descrição |
 |--------|-----------|
-| \
-pm run dev\ | Inicia o servidor de desenvolvimento |
-| \
-pm run build\ | Constrói a aplicação para produção |
-| \
-pm run preview\ | Visualiza o build de produção |
-| \
-pm run lint\ | Executa validação de código com ESLint |
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Constrói a aplicação para produção |
+| `npm run preview` | Visualiza o build de produção |
+| `npm run lint` | Executa validação de código com ESLint |
 
 ---
 
@@ -215,23 +211,23 @@ pm run lint\ | Executa validação de código com ESLint |
 
 ## 🗂️ Componentes Principais
 
-### \Pages\
+### `Pages`
 - **homePage.jsx**: Landing page com featured products
 - **productPage.jsx**: Catálogo com filtros avançados e ordenação
 - **productViewPage.jsx**: Detalhes completos de um produto
 - **login.jsx** / **cadastro.jsx**: Autenticação de usuários
 - **meusPedidosPage.jsx**: Dashboard de pedidos do usuário
 
-### \Components\
+### `Components`
 - **header.jsx**: Cabeçalho com navegação e carrinho
 - **filterGroup.jsx**: Componente reutilizável de filtros
 - **productCard.jsx**: Card individual de produto
 - **cartDropDown.jsx**: Menu suspenso do carrinho
 
-### \Contexts\
+### `Contexts`
 - **cartContext.jsx**: Gerenciamento global do estado do carrinho
 
-### \Services\
+### `Services`
 - **api.js**: Configuração centralizada do Axios para requisições HTTP
 
 ---
@@ -240,20 +236,20 @@ pm run lint\ | Executa validação de código com ESLint |
 
 O projeto usa **Tailwind CSS 4.2.1** com a compilação via Vite. Principais configurações:
 
-- **Tema personalizado** em \	ailwind.config.js\
-- **Cores principais**: Rosa (\pink-500\, \pink-700\), Cinza (\gray-*\)
+- **Tema personalizado** em `tailwind.config.js`
+- **Cores principais**: Rosa (`pink-500`, `pink-700`), Cinza (`gray-*`)
 - **Plugins Tailwind**: Forms, Typography
-- **Utilitários responsivos**: \sm:\, \md:\, \lg:\ prefixes
+- **Utilitários responsivos**: `sm:`, `md:`, `lg:` prefixes
 
-Para adicionar novos estilos, edite as classes direto no JSX ou estenda \	ailwind.config.js\.
+Para adicionar novos estilos, edite as classes direto no JSX ou estenda `tailwind.config.js`.
 
 ---
 
 ## 🔌 Integração com API
 
-A aplicação comunica-se com um backend via **Axios**. Exemplo de configuração em \services/api.js\:
+A aplicação comunica-se com um backend via **Axios**. Exemplo de configuração em `services/api.js`:
 
-\\\javascript
+```javascript
 import axios from 'axios';
 
 const api = axios.create({
@@ -261,13 +257,13 @@ const api = axios.create({
 });
 
 export default api;
-\\\
+```
 
 **Endpoints esperados** (exemplo):
-- \GET /products\ - Listar produtos
-- \POST /auth/login\ - Autenticação
-- \POST /auth/register\ - Registro
-- \GET /orders\ - Listar pedidos do usuário
+- `GET /products` - Listar produtos
+- `POST /auth/login` - Autenticação
+- `POST /auth/register` - Registro
+- `GET /orders` - Listar pedidos do usuário
 
 ---
 
@@ -275,20 +271,20 @@ export default api;
 
 O projeto foi construído com a abordagem **mobile-first**:
 - **Mobile**: 100% da largura
-- **Tablet** (\md:\): Layouts adaptados
-- **Desktop** (\lg:\): Layout completo com sidebar de filtros
+- **Tablet** (`md:`): Layouts adaptados
+- **Desktop** (`lg:`): Layout completo com sidebar de filtros
 
 ---
 
 ## 🐛 Troubleshooting
 
 ### Erro: "Cannot find module"
-\\\ash
+```bash
 npm install
-\\\
+```
 
 ### HMR não funciona
-Verifique a URL em \ite.config.js\ e as configurações de rede.
+Verifique a URL em `vite.config.js` e as configurações de rede.
 
 ### Estilos Tailwind não aparecem
 Certifique-se de que a configuração do Tailwind está correta e que o servidor de desenvolvimento está rodando.
@@ -296,7 +292,7 @@ Certifique-se de que a configuração do Tailwind está correta e que o servidor
 ### Requisições à API falham
 Verifique:
 - Se a API está rodando
-- Se a URL base em \VITE_API_URL\ está correta
+- Se a URL base em `VITE_API_URL` está correta
 - Configurações de CORS no backend
 
 ---
@@ -311,9 +307,9 @@ Este projeto foi desenvolvido como parte do programa **Geração Tech FullStack*
 
 Para contribuir com o projeto:
 
-1. Crie uma branch para sua feature (\git checkout -b feature/nova-funcionalidade\)
-2. Commit suas mudanças (\git commit -m 'Adiciona nova funcionalidade'\)
-3. Push para a branch (\git push origin feature/nova-funcionalidade\)
+1. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+2. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+3. Push para a branch (`git push origin feature/nova-funcionalidade`)
 4. Abra um Pull Request
 
 ---
