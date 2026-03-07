@@ -6,7 +6,7 @@ Um projeto de e-commerce moderno construído com **React**, **Vite** e **Tailwin
 
 ## � Preview do Projeto
 
-![Print do Projeto Loja Drip](./print-page.jpeg)
+![Print do Projeto Loja Drip](./public/print-site.jpeg)
 
 ---
 
