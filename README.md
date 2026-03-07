@@ -4,13 +4,13 @@ Um projeto de e-commerce moderno construído com **React**, **Vite** e **Tailwin
 
 ---
 
-## 📸 Preview do Projeto
+## � Preview do Projeto
 
 ![Print do Projeto Loja Drip](./public/print-site.jpeg)
 
 ---
 
-## 📋 Sobre o Projeto
+## �📋 Sobre o Projeto
 
 **Loja Drip** é uma plataforma de e-commerce especializada em roupas, calçados e acessórios. O projeto foi desenvolvido como parte do programa **Geração Tech FullStack** e implementa funcionalidades essenciais de uma loja online moderna.
 
@@ -44,64 +44,54 @@ Um projeto de e-commerce moderno construído com **React**, **Vite** e **Tailwin
 ```
 loja-drip/
 ├── src/
-│   ├── pages/
-│   │   ├── homePage.jsx              # Página inicial
-│   │   ├── productPage.jsx           # Listagem com filtros
-│   │   ├── productViewPage.jsx       # Detalhes do produto
-│   │   ├── categoriasPage.jsx        # Página de categorias
-│   │   ├── login.jsx                 # Tela de login
-│   │   ├── cadastro.jsx              # Cadastro de usuário
-│   │   ├── completarCadastro.jsx     # Complementar cadastro
-│   │   ├── meusPedidosPage.jsx       # Histórico de pedidos
-│   │   └── layout.jsx                # Layout comum
-│   │
-│   ├── components/
-│   │   ├── header.jsx                # Cabeçalho
-│   │   ├── footer.jsx                # Rodapé
-│   │   ├── mainNave.jsx              # Navegação principal
-│   │   ├── searchBar.jsx             # Barra de busca
-│   │   ├── productInfo.jsx           # Informações do produto
-│   │   ├── gallery.jsx               # Galeria de imagens
-│   │   ├── cartIcon.jsx              # Ícone do carrinho
-│   │   ├── cartDropDown.jsx          # Menu suspenso do carrinho
-│   │   ├── filterGroup.jsx           # Grupo de filtros
-│   │   ├── logo.jsx                  # Logo da marca
-│   │   ├── authLinks.jsx             # Links de autenticação
-│   │   ├── buyBox.jsx                # Caixa de compra
-│   │   ├── relatedProducts.jsx       # Produtos relacionados
-│   │   ├── section.jsx               # Componente de seção genérico
-│   │   ├── AbaProdutos/
+│   ├── pages/                 # Páginas da aplicação
+│   │   ├── homePage.jsx       # Página inicial
+│   │   ├── productPage.jsx    # Listagem de produtos com filtros
+│   │   ├── productViewPage.jsx # Detalhes do produto
+│   │   ├── categoriasPage.jsx # Página de categorias
+│   │   ├── login.jsx          # Tela de login
+│   │   ├── cadastro.jsx       # Tela de cadastro
+│   │   ├── completarCadastro.jsx # Complementar dados do cadastro
+│   │   ├── meusPedidosPage.jsx    # Histórico de pedidos
+│   │   └── layout.jsx         # Layout comum
+│   ├── components/            # Componentes reutilizáveis
+│   │   ├── header.jsx         # Cabeçalho
+│   │   ├── footer.jsx         # Rodapé
+│   │   ├── mainNave.jsx       # Navegação principal
+│   │   ├── searchBar.jsx      # Barra de busca
+│   │   ├── productInfo.jsx    # Informações do produto
+│   │   ├── gallery.jsx        # Galeria de imagens
+│   │   ├── cartIcon.jsx       # Ícone do carrinho
+│   │   ├── cartDropDown.jsx   # Menu suspenso do carrinho
+│   │   ├── filterGroup.jsx    # Grupo de filtros
+│   │   ├── logo.jsx           # Logo da marca
+│   │   ├── authLinks.jsx      # Links de autenticação
+│   │   ├── buyBox.jsx         # Caixa de compra
+│   │   ├── relatedProducts.jsx # Produtos relacionados
+│   │   ├── section.jsx        # Componente de seção genérico
+│   │   ├── AbaProdutos/       # Componentes de listagem
 │   │   │   ├── productCardList.jsx
 │   │   │   └── productListingList.jsx
-│   │   └── HomePage/
+│   │   └── HomePage/          # Componentes da página inicial
 │   │       ├── productCard.jsx
 │   │       └── productListing.jsx
-│   │
-│   ├── contexts/
-│   │   └── cartContext.jsx           # Contexto do carrinho (Context API)
-│   │
-│   ├── services/
-│   │   └── api.js                    # Configuração do Axios
-│   │
-│   ├── data/
-│   │   └── products.js               # Catálogo de produtos
-│   │
-│   ├── assets/                       # Imagens e recursos
-│   ├── App.jsx                       # Componente raiz
-│   ├── index.css                     # Estilos globais
-│   └── main.jsx                      # Ponto de entrada
-│
-├── public/                           # Arquivos estáticos
-├── node_modules/                     # Dependências (git ignorado)
-├── dist/                             # Build de produção (git ignorado)
-│
-├── vite.config.js                    # Configuração do Vite
-├── tailwind.config.js                # Configuração do Tailwind
-├── postcss.config.js                 # Configuração do PostCSS
-├── eslint.config.js                  # Configuração do ESLint
-├── package.json                      # Dependências do projeto
-├── package-lock.json                 # Lock file de versões
-└── README.md                         # Este arquivo
+│   ├── contexts/              # Context API
+│   │   └── cartContext.jsx    # Contexto do carrinho
+│   ├── services/              # Serviços (API, etc)
+│   │   └── api.js             # Configuração do Axios
+│   ├── data/                  # Dados estáticos
+│   │   └── products.js        # Catálogo de produtos
+│   ├── assets/                # Imagens e recursos
+│   ├── App.jsx                # Componente raiz
+│   ├── index.css              # Estilos globais
+│   └── main.jsx               # Entrada da aplicação
+├── public/                    # Arquivos públicos
+├── vite.config.js             # Configuração do Vite
+├── tailwind.config.js         # Configuração do Tailwind
+├── postcss.config.js          # Configuração do PostCSS
+├── eslint.config.js           # Configuração do ESLint
+├── package.json               # Dependências do projeto
+└── README.md                  # Este arquivo
 ```
 
 ---
