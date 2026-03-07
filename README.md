@@ -4,13 +4,13 @@ Um projeto de e-commerce moderno construído com **React**, **Vite** e **Tailwin
 
 ---
 
-## � Preview do Projeto
+## 📸 Preview do Projeto
 
 ![Print do Projeto Loja Drip](./public/print-site.jpeg)
 
 ---
 
-## �📋 Sobre o Projeto
+## 📋 Sobre o Projeto
 
 **Loja Drip** é uma plataforma de e-commerce especializada em roupas, calçados e acessórios. O projeto foi desenvolvido como parte do programa **Geração Tech FullStack** e implementa funcionalidades essenciais de uma loja online moderna.
 
